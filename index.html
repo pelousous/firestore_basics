@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Cloud Cafe</h1>
+
+    <div class="content">
+
+        <form id="add-cafe-form">
+            <input type="text" name="name" placeholder="Cafe name" />
+            <input type="text" name="city" placeholder="Cafe city">
+            <button>Add Cafe</button>
+        </form>
+
+        <ul id="cafe-list"></ul>
+
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAxJon3Z-y6pn6Qe4RiduyIqkDW7UqVhK4",
+            authDomain: "svg-db.firebaseapp.com",
+            databaseURL: "https://svg-db.firebaseio.com",
+            projectId: "svg-db",
+            storageBucket: "svg-db.appspot.com",
+            messagingSenderId: "868941547140",
+            appId: "1:868941547140:web:9a78443a439d94c1c964d1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        /* creation of an instance of the db */
+        const db = firebase.firestore();
+    </script>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
